@@ -1,5 +1,5 @@
 package com.framework.techchallengefrwk.models
 
-class ServicesResult(
+class PostsResult(
     var services: List<PostagensData>
 )

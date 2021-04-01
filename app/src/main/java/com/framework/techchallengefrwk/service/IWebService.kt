@@ -1,6 +1,6 @@
 package com.framework.techchallengefrwk.service
 
-import com.framework.techchallengefrwk.models.ServicesResult
+import com.framework.techchallengefrwk.models.PostsResult
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -20,7 +20,7 @@ interface IWebService {
 
     @GET("/posts")
     fun getServices(
-    ): Call<ServicesResult>
+    ): Call<PostsResult>
 
 }
 

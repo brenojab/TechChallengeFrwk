@@ -6,6 +6,12 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
+        android:id="@+id/navigation_posts"
+        android:name="com.framework.techchallengefrwk.ui.postagens.PostagensFragment"
+        android:label="Posts"
+        tools:layout="@layout/fragment_postagens" />
+
+    <fragment
         android:id="@+id/navigation_home"
         android:name="com.framework.techchallengefrwk.ui.home.HomeFragment"
         android:label="@string/title_home"

@@ -5,24 +5,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import com.framework.techchallengefrwk.R
+import com.framework.techchallengefrwk.ui.home.HomeViewModel
 
 class PostagensFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
 
-
-
-        }
-    }
+    private lateinit var postagensViewModel: PostagensViewModel
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_postagens, container, false)
+        postagensViewModel =
+            ViewModelProvider(this).get(PostagensViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_postagens, container, false)
+
+
+
+
+        return root
     }
 }
